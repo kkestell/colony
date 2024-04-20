@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="OpenTK" Version="4.8.2" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Assets\Fonts\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Assets\Fonts\ter-u14n.bdf" />
+      <EmbeddedResource Include="Assets\Fonts\ter-u14n.bdf" />
+      <None Remove="Assets\Fonts\unifont-15.1.04.bdf" />
+      <EmbeddedResource Include="Assets\Fonts\unifont-15.1.04.bdf" />
+      <None Remove="Assets\Fonts\icl16x16u.bdf" />
+      <EmbeddedResource Include="Assets\Fonts\icl16x16u.bdf" />
+      <None Remove="Assets\Fonts\ib8x8u.bdf" />
+      <EmbeddedResource Include="Assets\Fonts\ib8x8u.bdf" />
+    </ItemGroup>
+
+</Project>
